@@ -1,0 +1,238 @@
+/* Variables */
+$primary-color: #039f9d;
+$secondary-color: #52acab;
+$text-color: #e0dcd6;
+$border-color: #039f9d47;
+$border-radius: 10px;
+
+/* Override general styles */
+
+/* General styles */
+.uk-button {
+  text-transform: lowercase !important;
+}
+
+/* Header */
+.top-bar {
+  display: none;
+}
+
+.logo-wrapper a {
+  padding: 0rem 4rem;
+}
+
+.astroid-nav {
+  .nav-title {
+    text-transform: capitalize;
+  }
+
+  .nav-link,
+  .astroid-sidebar-menu .nav-link {
+    color: #fff !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo-wrapper a {
+    padding: 0;
+  }
+
+  .astroid-header-section {
+    header.astroid-header:not(.astroid-header-sticky) {
+      padding: 15px 0 0 !important;
+    }
+
+    header.astroid-stacked-divided-header .astroid-nav-wraper {
+      background-color: $primary-color;
+    }
+  }
+}
+
+/* Breadcrumbs */
+
+.mod_breadcrumbs {
+  padding: 2rem !important;
+  border-top: 1px solid $border-color !important;
+  border-bottom: 1px solid $border-color !important;
+  margin-bottom: 20px !important;
+
+  .heading-title-page {
+    font-size: 40px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Blog styles */
+
+.article-wraper-inner img,
+.item-page.uk-article .entry-image img {
+  border-radius: $border-radius !important;
+}
+
+.page-link {
+
+  &.active,
+  &.active>.page-link {
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+
+  color: $text-color !important;
+}
+
+.pagination__wrapper~p.counter,
+.author-wrap {
+  display: none !important;
+}
+
+/* Virtuemart override styles (product grid) */
+
+.orderby-displaynumber,
+.category-view h4,
+div.vm-details-button,
+.horizontal-separator,
+.category-view>.browse-view h1 {
+  display: none !important;
+}
+
+.browse-view,
+.related-products-view {
+  .row {
+    .product {
+      .spacer img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+.vm-product-descr-container-1,
+.vm-product-descr-container-0 {
+  >h2 {
+    font-size: 25px !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left !important;
+
+    a {
+      color: $primary-color !important;
+    }
+  }
+}
+
+.spacer.product-container {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.vm-pagination {
+  float: none !important;
+}
+
+@media screen and (min-width: 992px) {
+  div.product {
+    width: 25% !important;
+  }
+
+  /* Virtuemart override styles (single product) */
+
+  .product-container.productdetails-view.productdetails {
+
+    >h1,
+    >.icons {
+      display: none !important;
+    }
+  }
+
+  .product-container.productdetails-view.productdetails {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 2rem;
+
+    >.product-short-description {
+      grid-column: 2/3 !important;
+      grid-row: 1/2 !important;
+    }
+
+    >.vm-product-container {
+      grid-column: 1/2 !important;
+      grid-row: 1/2 !important;
+    }
+
+    >.additional-images {
+      grid-column: 1/2 !important;
+      grid-row: 2/3 !important;
+    }
+
+    >.product-description {
+      grid-column: 1/3 !important;
+      grid-row: 3/4 !important;
+    }
+  }
+
+  .vm-product-container {
+    .vm-product-media-container {
+      width: 100% !important;
+
+      >.main-image {
+        text-align: left !important;
+      }
+    }
+  }
+}
+
+/* Styles for HTML inserted with custom-scripts.js */
+
+@media screen and (max-width: 992px) {
+  #astroid-header {
+    .contact-info-wrapper {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .astroid-section.astroid-header-section::after {
+    content: '';
+    background-color: $primary-color;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    display: inline-block;
+    margin-top: -45px;
+    z-index: -1;
+  }
+
+  #astroid-header {
+    .contact-info-wrapper {
+      position: relative;
+      top: -120px;
+      text-align: right;
+      height: 0;
+
+      .container {
+        .row {
+          .content-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              color: $primary-color;
+              font-size: 14px;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
