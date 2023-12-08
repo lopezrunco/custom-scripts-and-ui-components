@@ -1,0 +1,97 @@
+// Define color variables
+$white-color: #ffffff;
+$red-color: #d73d32;
+$blue-color: #55acee;
+$dark-blue-color: #3b5999;
+$black-color: #010101;
+$light-gray-color: #a9a9a9;
+$orange-color: #e67318;
+
+.product .product-inner .vm-product-rating-container .ratingbox,
+.product .product-inner .vm-product-rating-container .amount a,
+.vm-product-details-container .manufacturer,
+.vm-product-details-container .in-stock {
+    display: none;
+}
+
+.sp-megamenu-parent>li.active>a,
+.sp-megamenu-parent>li:hover>a {
+    font-weight: bold;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+    color: $white-color;
+}
+
+ul.social-icons a.google-plus {
+    border-bottom: 2px solid $red-color;
+    display: none;
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+    content: "\f09a";
+    color: $white-color;
+}
+
+ul.social-icons a.twitter {
+    border: 1px solid $white-color;
+    border-bottom: 2px solid $blue-color;
+    display: none;
+}
+
+ul.social-icons a.facebook {
+    border: 1px solid $white-color;
+    border-bottom: 2px solid $dark-blue-color;
+}
+
+.fa-flickr:before {
+    content: "\f16e";
+    color: $white-color;
+}
+
+ul.social-icons a {
+    display: inline-block;
+    vertical-align: top;
+    height: 42px;
+    line-height: 40px;
+    width: 54px;
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+    color: $black-color;
+    border-bottom: 2px solid $dark-blue-color;
+    border-left: none;
+}
+
+#style-layout3 .sp-vmsearch .sp-vmsearch-categorybox {
+    display: none !important;
+}
+
+.product .product-inner .vm-product-media-container .image-block>a img {
+    margin: auto;
+    width: auto;
+    border: solid 1px $light-gray-color;
+}
+
+.ask-a-question {
+    margin-top: 0px !important;
+}
+
+/* Add accent color to some UI elements */
+.sp-module.vm_category .sp-module-title {
+    background-color: $orange-color !important;
+}
+
+div.vina-treeview-virtuemart .more-view {
+    color: $orange-color !important;
+}
+
+.product .product-inner .vm-product-media-container .product-status .label-pro.status-new {
+    background: $orange-color !important;
+}
+
+.product .product-inner .vm-product-media-container .product-status .label-pro.status-new:after {
+    border-right: 12px solid $orange-color !important;
+}

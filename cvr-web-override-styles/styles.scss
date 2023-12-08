@@ -1,0 +1,78 @@
+// variables
+$primary-color: #0d244c;
+$secondary-color: #1ca650;
+$whatsapp-color: #25d366;
+$transparent-white: rgba(255, 255, 255, 0);
+
+.items-sale,
+.deals-countdown {
+    .fusion-dash-seconds {
+        display: none;
+    }
+}
+
+.items-sale {
+    .fusion-dash-wrapper {
+        margin-right: -9px;
+    }
+}
+
+.deals-countdown {
+    .fusion-countdown {
+        font-weight: 600;
+    }
+}
+
+/* Ocultar opciones de ordenado de productos */
+.catalog-ordering.fusion-woo-sorting.fusion-woo-sorting-1 {
+    display: none !important;
+}
+
+/* Cambiar texto de boton Load more */
+.fusion-load-more-button.fusion-product-button {
+    color: $transparent-white !important;
+
+    &::before {
+        margin: 0 auto !important;
+        content: "Cargar más productos" !important;
+        color: $primary-color !important;
+    }
+}
+
+.fusion-loading-msg {
+    display: none !important;
+}
+
+/* Ocultar menu Ordenar por */
+.orderby.order-dropdown {
+    display: none !important;
+}
+
+/* Ocultar busqueda en celulares */
+@media screen and (max-width: 992px) {
+    .menu-item.menu-item-type-custom.menu-item-object-custom.custom-menu-search-inline {
+        display: none !important;
+    }
+}
+
+/* Boton Whatsapp personalizado */
+#wapp-btn {
+    background-color: $whatsapp-color;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 9999999 !important;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+
+    i {
+        margin-right: 0 !important;
+    }
+}

@@ -1,0 +1,89 @@
+.fusion-woo-product-design-clean {
+
+    .products,
+    .slides {
+        .product-title {
+            font-style: normal;
+        }
+    }
+}
+
+.woocommerce-loop-category__title {
+    text-align: center;
+}
+
+.fusion-menu-element-wrapper {
+    .fusion-megamenu-wrapper {
+        .fusion-megamenu-widgets-container {
+            padding: 0 55px;
+        }
+    }
+}
+
+/* ocultar logo en sticky header */
+.fusion-imageframe.imageframe-none.imageframe-2 a img {
+    display: none !important;
+}
+
+/* acortar alto de titulo de paginas */
+.fusion-body {
+    .fusion-flex-container.fusion-builder-row-3 {
+        padding-top: 60px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+/* agregar borde a imagen de producto */
+c {
+    .fusion-image-wrapper {
+        border: 1px solid #ccc !important;
+        border-radius: 5px !important;
+    }
+}
+
+/* quitar pestana de info adicional en productos */
+.additional_information_tab {
+    display: none !important;
+}
+
+#tab-additional_information {
+    display: none !important;
+}
+
+/* ocultar campo de seleccion de pais en secion ver carrito */
+.form-row.form-row-wide#calc_shipping_country_field {
+    display: none !important;
+}
+
+/* ocultar opciones de compra y precios */
+.button.product_type_simple.add_to_cart_button.ajax_add_to_cart,
+.fusion-carousel-price,
+.price {
+    display: none !important;
+}
+
+.single_add_to_cart_button.button {
+    display: none !important;
+}
+
+#menu-cart-account-menu,
+#menu-cart-account-menu-2,
+#menu-cart-account-menu-1 {
+    display: none !important;
+}
+
+/* ocultar categoria en producto */
+.product_meta {
+    display: none !important;
+}
+
+/* ocultar pestana de valoraciones */
+.woo-tabs-horizontal {
+    .woocommerce-tabs {
+
+        >.tabs li,
+        .woocommerce-Reviews {
+            display: none !important;
+        }
+    }
+}

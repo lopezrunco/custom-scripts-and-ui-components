@@ -21,6 +21,12 @@ This repository serves as a centralized location for various custom scripts desi
 - **Bolivia embassy web social links generator**: Python script that generates the required HTML for the social section.
 - **Bolivia embassy custom html**: Custom HTML code inserted in Wordpress.
 - **Input with mask**: Script to handle input for credit card information fields.
+- **1987 website project HTML generator**: Generates structured HTML content representing a tabbed interface for showcasing images of real state projects.
+- **Agroymascotas web styles and script**: Generates styles to override the default styles of the Agroymascotas website & appends a WhatsApp contact button for every product in the e-commerce platform.
+- **El Estribo Agroveterinaria web styles and script**: Generates styles to override the default styles of the El Estribo website & appends a WhatsApp contact button for every product in the e-commerce platform.
+- **Agroinsumos web override styles**: Generates styles to override the default styles of the Agroinsumos website.
+- **Centro Veterinario Regional web override styles**: Generates styles to override the default styles of the CVR website.
+- **Casillas agricolas web override styles**: Generates styles to override the default styles of the Casillas agricolas website.
 
 ## Usage
 
