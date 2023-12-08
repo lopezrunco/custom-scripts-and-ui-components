@@ -18,6 +18,8 @@ This repository serves as a centralized location for various custom scripts desi
 - **Change Woocomerce currency symbol**: changes the 'USD' symbol for 'U$'.
 - **Change Avada Wordpress currency symbol**: changes the '$' symbol to 'U$S'.
 - **Custom scripts & styles Valuar website**: override styles, custom video player & script to insert contact info on the web header'.
+- **Bolivia embassy web social links generator**: Python script that generates the required HTML for the social section.
+- **Bolivia embassy custom html**: Custom HTML code inserted in Wordpress.
 
 ## Usage
 
