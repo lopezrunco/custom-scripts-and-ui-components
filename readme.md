@@ -16,6 +16,7 @@ This repository serves as a centralized location for various custom scripts desi
 ## Scripts Included
 
 - **Change Woocomerce currency symbol**: changes the 'USD' symbol for 'U$'.
+- **Change Avada Wordpress currency symbol**: changes the '$' symbol to 'U$S'.
 
 ## Usage
 
@@ -28,11 +29,10 @@ To use a script:
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the scripts included here, subject to the terms of the license.
+This repository is licensed under the MIT License. You are free to use, modify, and distribute the scripts included here, subject to the terms of the license.
 
 ---
 
 **Note**: Always ensure to test scripts in a development environment before using them in a production environment.
-```
 
 Replace placeholders like `Script Name`, `Description of script`, and any other relevant information with the actual details for each script included in your repository. Additionally, modify or expand the sections based on your specific repository's content and requirements.
