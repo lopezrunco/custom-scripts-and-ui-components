@@ -1,5 +1,4 @@
-// Copiar y pegar este código en el archivo functions.php del tema, que está en la carpeta wp-content/themes/tema/
-
+<!-- Copy this code in wp-content/themes/your-theme/functions.php  -->
 
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
 
