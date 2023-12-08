@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 50px 20px 0 20px;
+    background: #0072ff;
+    background: radial-gradient(circle, #0072ff 1%, #2119ad 100%);
+    margin: 100px auto;
+
+    input {
+        font-size: 18px;
+        padding: 10px;
+        border: solid 1px #2d9ae2;
+        color: #fff;
+        border-radius: 5px;
+        background-color: transparent;
+        margin: 5px 0;
+        outline: none;
+    }
+
+    #inputCard {
+        width: 70%;
+    }
+
+    #inputDate {
+        width: 20%;
+    }
+
+    #inputCVV {
+        width: 20%;
+    }
+
+    .holder {
+        color: #fff;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 50px;
+    }
+}
