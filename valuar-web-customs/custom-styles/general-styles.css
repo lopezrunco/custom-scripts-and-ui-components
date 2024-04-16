@@ -73,6 +73,19 @@
   display: none !important;
 }
 
+/* Virtuemart Category styles */
+
+.vm-categories-wall-catname {
+  font-size: 23px !important;
+}
+
+/* centering the last category li of home categories in desktop mode */
+@media screen and (min-width: 992px) {
+  ul.vm-categories-wall>li.vm-categories-wall-catwrapper.floatleft.width33:nth-child(7) {
+    width: 100% !important;
+  }
+}
+
 /* Virtuemart override styles (product grid) */
 
 .orderby-displaynumber,
@@ -92,7 +105,6 @@ div.vm-details-button,
 .vm-product-descr-container-0>h2 {
   font-size: 18px !important;
   margin: 0 0 20px 0 !important;
-  text-align: left !important;
 }
 
 .vm-product-descr-container-1>h2 a,
@@ -149,6 +161,11 @@ div.vm-details-button,
 .additional-images img {
   width: 120px !important;
   border: 1px solid #ccc !important;
+}
+
+/* show productos in row always at center no matter the number of product */
+div[class*="-view"] .row {
+  justify-content: center !important;
 }
 
 @media screen and (min-width: 992px) {
