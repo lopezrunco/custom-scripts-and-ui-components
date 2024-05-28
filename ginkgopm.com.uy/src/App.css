@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #2a2a2a;
+}
+
+body {
+  background-color: #343434;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.content-wrap {
+  width: 98%;
+  max-width: 1180px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 90%;
+  max-width: 330px;
+  margin: 0 auto;
+  color: #babbbe;
+  font-size: 1.3rem;
+}
+
+.login h3 {
+  font-weight: 400;
+}
+
+.login form {
+  width: 100%;
+}
+
+.login label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+}
+
+.login input.password-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #babbbe;
+  color: #babbbe;
+  padding: 0.5rem 0;
+}
+
+.login button {
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  padding: 8px 35px;
+  text-transform: uppercase;
+  border: 2px solid #a8041f;
+  border-color: #a8041f;
+  border-radius: 3px;
+  background-color: #a8041f;
+  color: #babbbe;
+  text-shadow: 0 1px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.login button:hover {
+  background-color: transparent;
+  border-color: #babbbe;
+  color: #babbbe;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.1rem 2rem;
+  margin: 1rem 0;
+}
+
+.video-grid .item a:visited {
+  border-color: #474747;
+  color: #626262;
+}
+
+.video-grid a.video-link-element {
+  color: #babbbe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid #babbbe;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.play-icon {
+  height: 3rem;
+  width: 3rem;
+  margin-top: -2rem;
+  transform: translateX(1rem);
+}
+
+.video-grid a.video-link-element i {
+  font-size: 3rem;
+  display: none;
+}
+
+.home-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.home-link a {
+  color: #babbbe;
+  text-decoration: none;
+}
+
+.home-link .separator {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #babbbe;
+}
+
+@media screen and (min-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-grid iframe {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-grid .item a,
+  .video-grid .item img {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .video-grid .item a:hover {
+    background-color: #2c2c2c;
+  }
+
+  .video-grid .item:hover img {
+    transform: translateX(3rem);
+  }
+}

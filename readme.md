@@ -1,32 +1,30 @@
 # Custom WordPress Scripts
 
-This repository contains a collection of custom scripts developed for enhancing functionalities within WordPress websites.
+This repository contains a collection of custom scripts and UI components developed over my time of hands-on experience as a developer.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Scripts Included](#scripts-included)
+- [Content](#content)
 - [Usage](#usage)
 - [License](#license)
 
 ## Introduction
 
-This repository serves as a centralized location for various custom scripts designed for WordPress-based websites. These scripts aim to extend or modify the default behavior of WordPress or offer additional functionalities to meet specific requirements.
+This repository is a collection of crafted scripts and user interface components designed to streamline the web development process. Developed along my journey in crafting corporate websites, e-commerce platforms, CMS scripts, web apps and more.
 
-## Scripts Included
+Whether you're building a sophisticated e-commerce platform, a sleek corporate website, or a tailored web application, this library is very usefull. Each item in this collection is designed to enhance productivity, maintainability, and overall user experience.
 
-- **Custom scripts & styles Valuar website**: override styles, custom video player & script to insert contact info on the web header'.
-- **Change Woocomerce currency symbol**: changes the 'USD' symbol for 'U$'.
-- **Change Avada Wordpress currency symbol**: changes the '$' symbol to 'U$S'.
-- **Bolivia embassy web social links generator**: Python script that generates the required HTML for the social section.
-- **Bolivia embassy custom html**: Custom HTML code inserted in Wordpress.
-- **Input with mask**: Script to handle input for credit card information fields.
-- **1987 website project HTML generator**: Generates structured HTML content representing a tabbed interface for showcasing images of real state projects.
-- **Agroymascotas web styles and script**: Generates styles to override the default styles of the Agroymascotas website & appends a WhatsApp contact button for every product in the e-commerce platform.
-- **El Estribo Agroveterinaria web styles and script**: Generates styles to override the default styles of the El Estribo website & appends a WhatsApp contact button for every product in the e-commerce platform.
-- **Agroinsumos web override styles**: Generates styles to override the default styles of the Agroinsumos website.
-- **Centro Veterinario Regional web override styles**: Generates styles to override the default styles of the CVR website.
-- **Casillas agricolas web override styles**: Generates styles to override the default styles of the Casillas agricolas website.
+## Content
+
+- [X] agroveterinariaelestribo.com.uy: Script that appends a WhatsApp contact button for every product in the e-commerce platform.
+- [X] agroymascotas.com.uy: Script that appends a WhatsApp contact button for every product in the e-commerce platform.
+- [X] ginkgopm.com.uy: Video gallery React.js app.
+- [X] valuar.com.uy: Custom video player & script to insert contact info on the web header.
+
+- [X] Change currency symbol in Aavada Wordpress theme
+- [X] Change currency symbol in Woocomerce themes
+- [X] Input with mask: Script to handle input for credit card information fields.
 
 ## Usage
 
