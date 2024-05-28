@@ -57,3 +57,10 @@ iframe {
   }
 }
 ```
+
+## Home page brands banner
+
+- Go to the Page builder, create a new RAW HTML addon and paste this
+```html
+  <div id="nuestras-marcas"></div>
+```

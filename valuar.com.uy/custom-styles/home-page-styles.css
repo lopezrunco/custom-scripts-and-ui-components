@@ -1,0 +1,13 @@
+/* Overlay slider styles */
+
+#sppb-addon-1623988361606::after {
+    content: '';
+    background-image: url(https://tradicion.com.uy/images/2023/04/11/overlay.png);
+    position: absolute;
+    margin-top: -315px;
+    width: 100%;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
