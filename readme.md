@@ -1,4 +1,4 @@
-# Custom WordPress Scripts
+# Custom scripts and UI components
 
 This repository contains a collection of custom scripts and UI components developed over my time of hands-on experience as a developer.
 
@@ -47,8 +47,6 @@ To use a script:
 ## License
 
 This repository is licensed under the MIT License. You are free to use, modify, and distribute the scripts included here, subject to the terms of the license.
-
----
 
 **Note**: Always ensure to test scripts in a development environment before using them in a production environment.
 
