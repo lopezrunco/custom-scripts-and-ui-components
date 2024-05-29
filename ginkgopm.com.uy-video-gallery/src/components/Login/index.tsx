@@ -34,7 +34,7 @@ const Login: React.FC<LoginProps> = ({ onPasswordCorrect }) => {
             className="password-input"
           />
         </label>
-        <button type="submit">Entrar</button>
+        <button type="submit">Entrar <i className="fas fa-chevron-right"></i></button>
       </form>
       {error && <span className="login-error">{error}</span>}
     </div>

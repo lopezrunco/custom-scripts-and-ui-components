@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* Colors */
+:root {
+  --white: #babbbe;
+  --red: #a8041f;
+  --mid-dark: #343434;
+  --low-dark: #2a2a2a;
+}
+
+/* Spacing */
+:root {
+  --border-radius: 3px;
+}
+
+/* FX */
+:root {
+  --transition: all 0.25s ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +25,11 @@
 }
 
 ::selection {
-  background-color: #2a2a2a;
+  background-color: var(--low-dark);
 }
 
 body {
-  background-color: #343434;
+  background-color: var(--mid-dark);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -33,7 +51,7 @@ body {
   height: 90%;
   max-width: 330px;
   margin: 0 auto;
-  color: #babbbe;
+  color: var(--white);
   font-size: 1.3rem;
 }
 
@@ -59,33 +77,50 @@ body {
   background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid #babbbe;
-  color: #babbbe;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
   padding: 0.5rem 0;
 }
 
-.login button {
+.login .login-error {
+  background-color: var(--low-dark);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+button {
   border: none;
   outline: none;
   margin: 1rem 0;
   padding: 8px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-transform: uppercase;
-  border: 2px solid #a8041f;
-  border-color: #a8041f;
-  border-radius: 3px;
-  background-color: #a8041f;
-  color: #babbbe;
+  border: 2px solid var(--red);
+  border-color: var(--red);
+  border-radius: var(--border-radius);
+  background-color: var(--red);
+  color: var(--white);
   text-shadow: 0 1px rgb(0 0 0 / 15%);
   cursor: pointer;
-  transition: all 0.25s ease-in-out;
+  transition: var(--transition);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
-.login button:hover {
+button:hover {
   background-color: transparent;
-  border-color: #babbbe;
-  color: #babbbe;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+h2.title {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 3rem;
 }
 
 .video-grid {
@@ -101,15 +136,15 @@ body {
 }
 
 .video-grid a.video-link-element {
-  color: #babbbe;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  border: 1px solid #babbbe;
-  border-radius: 3px;
+  border: 1px solid var(--white);
+  border-radius: var(--border-radius);
   text-decoration: none;
   font-weight: 400;
 }
@@ -136,14 +171,14 @@ body {
 }
 
 .home-link a {
-  color: #babbbe;
+  color: var(--white);
   text-decoration: none;
 }
 
 .home-link .separator {
   width: 2rem;
   height: 0.1rem;
-  background-color: #babbbe;
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
@@ -163,7 +198,7 @@ body {
 
   .video-grid .item a,
   .video-grid .item img {
-    transition: all 0.25s ease-in-out;
+    transition: var(--transition);
   }
 
   .video-grid .item a:hover {

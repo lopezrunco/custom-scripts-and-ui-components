@@ -8,21 +8,30 @@ interface Video {
 const VideoGallery: React.FC = () => {
   const [videos, setVideos] = useState<Video[]>([]);
   const [visibles, setVisibles] = useState<number>(12);
+  const [eventTitle, setEventTitle] = useState<string>("")
 
   useEffect(() => {
-    const fetchVideos = async () => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const eventYear = searchParams.get("eventYear") || "2024";
+
+    const fetchData = async () => {
       try {
-        const response = await fetch("/data.json");
+        const response = await fetch(`/data/${eventYear}.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        setVideos(data);
+        if (data.title) {
+          setEventTitle(data.title)
+          setVideos(data.videos)
+        } else {
+          throw new Error('Data not found.')
+        }
       } catch (error) {
         console.error("Failed to fetch videos:", error);
       }
     };
-    fetchVideos();
+    fetchData();
   }, []);
 
   const handleLoadMore = () => {
@@ -30,25 +39,28 @@ const VideoGallery: React.FC = () => {
   };
 
   return (
-    <div className="video-grid">
-      {videos.slice(0, visibles).map((video, i) => (
-        <div className="item" key={i}>
-          <a
-            href={`https://drive.google.com/file/d/${video.url}/view`}
-            target="_blank"
-            rel="noreferrer"
-            className="video-link-element"
-          >
-            <i className="far fa-play-circle"></i>
-            <p>{video.title}</p>
-          </a>
-          <img src="./play.svg" className="play-icon" alt={video.title} />
-        </div>
-      ))}
-      {visibles < videos.length && (
-        <button onClick={handleLoadMore}>Cargar mas</button>
-      )}
-    </div>
+    <React.Fragment>
+      <h2 className="title">{eventTitle}</h2>
+      <div className="video-grid">
+        {videos.slice(0, visibles).map((video, i) => (
+          <div className="item" key={i}>
+            <a
+              href={video.url}
+              target="_blank"
+              rel="noreferrer"
+              className="video-link-element"
+            >
+              <i className="far fa-play-circle"></i>
+              <p>{video.title}</p>
+            </a>
+            <img src="./play.svg" className="play-icon" alt={video.title} />
+          </div>
+        ))}
+      </div>
+        {visibles < videos.length && (
+          <button onClick={handleLoadMore}>Cargar más <i className="fas fa-plus"></i></button>
+        )}
+    </React.Fragment>
   );
 };
 

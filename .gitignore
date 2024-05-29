@@ -9,6 +9,7 @@
 # ginkgopm.com.uy-video-gallery
 /ginkgopm.com.uy-video-gallery/node_modules
 /ginkgopm.com.uy-video-gallery/public
+/ginkgopm.com.uy-video-gallery/utils
 /ginkgopm.com.uy-video-gallery/.env
 
 # /expobienestar.ginkgopm-photo-gallery
