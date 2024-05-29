@@ -1,0 +1,20 @@
+.home-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    padding: 1rem;
+}
+
+.home-link a {
+    color: #babbbe;
+    text-decoration: none;
+}
+
+.home-link .separator {
+    width: 2rem;
+    height: .1rem;
+    background-color: #babbbe;
+
+}

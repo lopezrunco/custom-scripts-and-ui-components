@@ -18,12 +18,19 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 ## Content
 
 - [X] agroveterinariaelestribo.com.uy: Append WhatsApp contact button in every product Script.
+
 - [X] agroymascotas.com.uy: Append WhatsApp contact button in every product Script.
+
 - [X] ginkgopm.com.uy: Video gallery React.js app.
+
+- [X] expobienestar.ginkgopm.com.uy: Photo gallery React.js app.
+
 - [X] valuar.com.uy scripts: Video player, header contact info & brands banner.
 
 - [X] Change currency symbol in Aavada Wordpress theme
+
 - [X] Change currency symbol in Woocomerce themes
+
 - [X] Input with mask: Script to handle input for credit card information fields.
 
 ## Usage

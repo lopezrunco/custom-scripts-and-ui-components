@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #343434;
+}
+
+.content-wrap {
+  width: 98%;
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.images-grid img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}
+
+.img-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #343434;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.img-viewer img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.img-viewer .close-icon {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: #bdbdbd;
+  transition: all .25s ease-in-out;
+}
+
+.img-viewer .close-icon:hover {
+  color: #fff;
+}
+
+.load-more-btn {
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  padding: 8px 35px;
+  text-transform: uppercase;
+  border: 2px solid #a8041f;
+  border-color: #a8041f;
+  border-radius: 3px;
+  background-color: #a8041f;
+  color: #fff;
+  text-shadow: 0 1px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.load-more-btn:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+  .images-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .images-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img-viewer .close-icon {
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-viewer {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .images-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .images-grid img:hover {
+    transform: translateY(-2px);
+  }
+}

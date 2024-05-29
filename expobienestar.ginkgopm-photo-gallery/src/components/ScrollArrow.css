@@ -1,0 +1,20 @@
+.scrollTop {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background-color: #a8041f;
+    border-radius: 50%;
+    line-height: 1rem;
+    color: #fff;
+    height: 3rem;
+    width: 3rem;
+    transition: all .25s ease-in-out;
+}
+
+.scrollTop:hover {
+    background-color: #95021a;
+}

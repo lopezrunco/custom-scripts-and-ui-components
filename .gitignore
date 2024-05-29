@@ -10,3 +10,11 @@
 /ginkgopm.com.uy/node_modules
 /ginkgopm.com.uy/public
 /ginkgopm.com.uy/.env
+
+# /expobienestar.ginkgopm-photo-gallery
+/expobienestar.ginkgopm-photo-gallery/node_modules
+/expobienestar.ginkgopm-photo-gallery/public
+/expobienestar.ginkgopm-photo-gallery/.firebase
+/expobienestar.ginkgopm-photo-gallery/.firebaserc
+/expobienestar.ginkgopm-photo-gallery/firebase.json
+/expobienestar.ginkgopm-photo-gallery/build
