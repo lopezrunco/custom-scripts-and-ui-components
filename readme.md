@@ -27,6 +27,8 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 
 - [X] valuar.com.uy scripts: Video player, header contact info & brands banner.
 
+- [X] Weather module React.js app.
+
 - [X] Change currency symbol in Aavada Wordpress theme
 
 - [X] Change currency symbol in Woocomerce themes

@@ -1,0 +1,27 @@
+:root {
+    --dark: #48484a;
+    --border: #f2f2f1;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    padding: 3rem 1rem;
+    margin: 1rem;
+    border: 1px solid var(--border);
+    color: var(--dark);
+}
+.content-wrapper .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}

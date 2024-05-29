@@ -18,3 +18,11 @@
 /expobienestar.ginkgopm-photo-gallery/.firebaserc
 /expobienestar.ginkgopm-photo-gallery/firebase.json
 /expobienestar.ginkgopm-photo-gallery/build
+
+# weather-module
+/weather-module/node_modules
+/weather-module/.firebase
+/weather-module/.firebaserc
+/weather-module/firebase.json
+/weather-module/build
+/weather-module/public
