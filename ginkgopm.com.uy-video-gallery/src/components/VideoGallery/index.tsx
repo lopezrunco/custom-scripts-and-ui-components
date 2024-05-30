@@ -7,7 +7,7 @@ interface Video {
 
 const VideoGallery: React.FC = () => {
   const [videos, setVideos] = useState<Video[]>([]);
-  const [visibles, setVisibles] = useState<number>(12);
+  const [visibles, setVisibles] = useState<number>(15);
   const [eventTitle, setEventTitle] = useState<string>("")
 
   useEffect(() => {

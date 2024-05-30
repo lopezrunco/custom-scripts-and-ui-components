@@ -8,9 +8,13 @@
 
 # ginkgopm.com.uy-video-gallery
 /ginkgopm.com.uy-video-gallery/node_modules
+/ginkgopm.com.uy-video-gallery/dist
 /ginkgopm.com.uy-video-gallery/public
 /ginkgopm.com.uy-video-gallery/utils
 /ginkgopm.com.uy-video-gallery/.env
+/ginkgopm.com.uy-video-gallery/.firebase
+/ginkgopm.com.uy-video-gallery/.firebaserc
+/ginkgopm.com.uy-video-gallery/firebase.json
 
 # /expobienestar.ginkgopm-photo-gallery
 /expobienestar.ginkgopm-photo-gallery/node_modules
