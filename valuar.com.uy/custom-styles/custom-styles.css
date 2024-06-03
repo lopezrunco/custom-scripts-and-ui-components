@@ -55,7 +55,8 @@
 .tz-slideshow.uk-slideshow .uk-light h3.ui-title,
 .tz-slideshow.uk-slideshow .uk-light .ui-content.uk-panel.uk-margin-top,
 .tz-slideshow.uk-slideshow .uk-light a {
-  color: #039f9d !important;
+    color: #494747 !important;
+    text-shadow: 3px 3px 2px rgba(255,255,255,0.6) !important;
 }
 
 .tz-slideshow.uk-slideshow .uk-light .ui-content.uk-panel.uk-margin-top,
