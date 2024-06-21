@@ -24,6 +24,10 @@
 /expobienestar.ginkgopm-photo-gallery/firebase.json
 /expobienestar.ginkgopm-photo-gallery/build
 
+# gerontologia.ginkgopm-photo-gallery
+/gerontologia.ginkgopm-photo-gallery/assets
+/gerontologia.ginkgopm-photo-gallery/assets-url.js
+
 # weather-module
 /weather-module/node_modules
 /weather-module/.firebase

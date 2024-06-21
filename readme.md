@@ -25,6 +25,8 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 
 - [X] expobienestar.ginkgopm.com.uy: Photo gallery React.js app.
 
+- [X] gerontologia.ginkgopm.com.uy: Photo gallery with vanilla JS.
+
 - [X] valuar.com.uy scripts: Video player, header contact info & brands banner.
 
 - [X] Weather module React.js app.

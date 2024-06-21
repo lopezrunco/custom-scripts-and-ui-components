@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --white: #babbbe;
+    --red: #a8041f;
+    --mid-dark: #343434;
+    --low-dark: #2a2a2a;
+    --danger: rgba(115, 0, 19, .697);
+    --success: rgba(44, 115, 0, .697);
+    --warning: rgba(180, 168, 5, .697);
+
+    --border-radius: 3px;
+
+    --transition: all .25s ease-in-out;
+}
+
+::selection {
+    background-color: var(--low-dark);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--mid-dark);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.home-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.home-link a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.home-link .separator {
+    width: 2rem;
+    height: 0.1rem;
+    background-color: var(--white);
+}
+
+h2.title {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+button {
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+    padding: 8px 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    border: 2px solid var(--red);
+    border-color: var(--red);
+    border-radius: var(--border-radius);
+    background-color: var(--red);
+    color: var(--white);
+    text-shadow: 0 1px rgb(0 0 0 / 15%);
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: transparent;
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.content-wrapper {
+    max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.images-container img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.images-container img:hover {
+    opacity: .8;
+}
+
+.images-container .zoom-img {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+    .images-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .images-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .images-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .images-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Modal */
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--low-dark)
+}
+
+.modal-container .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.modal-container img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid var(--low-dark);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
