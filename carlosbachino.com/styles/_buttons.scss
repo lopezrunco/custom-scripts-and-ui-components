@@ -1,0 +1,25 @@
+.button {
+    position: relative;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    padding: 8px 18px 8px 18px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: .8rem;
+
+    &::after {
+        content: '>';
+        font-weight: 900;
+        margin-left: .8rem;
+    }
+
+    &.primary-button {
+        background-color: var(--primary);
+        color: var(--white);
+
+        &:hover,
+        &:active {
+            background-color: var(--dark-primary);
+        }
+    }   
+}
