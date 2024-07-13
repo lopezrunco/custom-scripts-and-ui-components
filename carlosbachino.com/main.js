@@ -1,11 +1,12 @@
 import { SITE_URL, ApiEndpoint } from './config.js'
 
-const URL = `${SITE_URL}${ApiEndpoint}`
-const categoryId = 4
-const categoryUrl = `${URL}?categories=${categoryId}`
-
 const d = document
 const rootElement = d.getElementById('root')
+const postsToFetch = rootElement.getAttribute('data-posts') || 1
+
+const URL = `${SITE_URL}${ApiEndpoint}`
+const categoryId = 4
+const categoryUrl = `${URL}?categories=${categoryId}&per_page=${postsToFetch}`
 
 const months = {
     1: 'Ene',
@@ -101,7 +102,7 @@ const renderData = async (posts) => {
                     <p>
                         <b>Lugar: </b> ${location} | <b>Cabaña: </b> ${breeder} | <b>Modalidad: </b> ${modality}
                     </p>
-                    <a href="${link}" class="button primary-button">Detalles</a>
+                    <a href="${link}" class="button primary-button">Ver detalles</a>
                     ${broadcastButton}
                 </div>
             </div>`
