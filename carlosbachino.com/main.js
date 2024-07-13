@@ -2,7 +2,7 @@ import { SITE_URL, ApiEndpoint } from './config.js'
 
 const d = document
 const rootElement = d.getElementById('root')
-const postsToFetch = rootElement.getAttribute('data-posts') || 1
+const postsToFetch = rootElement.getAttribute('data-posts') || 3
 
 const URL = `${SITE_URL}${ApiEndpoint}`
 const categoryId = 4
@@ -22,6 +22,54 @@ const months = {
     11: 'Nov',
     12: 'Dic'
 };
+
+const createModal = () => {
+    const modal = d.createElement('div')
+    modal.id = 'modal'
+    modal.classList.add('modal')
+    modal.style.display = 'none' // Modal hidden inittialy.
+
+    const modalContent = d.createElement('div')
+    modalContent.classList.add('modal-content')
+
+    const closeBtn = d.createElement('span')
+    closeBtn.classList.add('close')
+    closeBtn.innerHTML = '&times' // Close button.
+
+    const excerptDiv = d.createElement('div')
+    excerptDiv.id = 'modal-excerpt'
+
+    modalContent.appendChild(closeBtn)
+    modalContent.appendChild(excerptDiv)
+    modal.appendChild(modalContent)
+    d.body.appendChild(modal)
+
+    // Add event listeners to close the modal.
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none'
+    })
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none'
+        }
+    })
+}
+
+const addModalListeners = () => {
+    const modal = d.getElementById('modal')
+    const modalContent = d.getElementById('modal-excerpt')
+
+    d.querySelectorAll('.details-button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault()
+            // Extract excerpt from button data attribute
+            const excerpt = button.getAttribute('data-excerpt')
+            modalContent.innerHTML = `<p>${excerpt}</p>`
+            modal.style.display = 'flex'
+        })
+    })
+}
 
 const fetchData = () => {
     fetch(categoryUrl)
@@ -67,7 +115,6 @@ const renderData = async (posts) => {
 
     for (const post of posts) {
         const title = post.title.rendered
-        const link = post.link
         const excerpt = post.excerpt.rendered
         const imageUrl = await getImageUrl(post)
         const broadcastLink = post.enlace_transmision
@@ -102,7 +149,11 @@ const renderData = async (posts) => {
                     <p>
                         <b>Lugar: </b> ${location} | <b>Cabaña: </b> ${breeder} | <b>Modalidad: </b> ${modality}
                     </p>
-                    <a href="${link}" class="button primary-button">Ver detalles</a>
+                    <a 
+                        href="#" 
+                        class="button primary-button details-button" 
+                        data-excerpt="${excerpt}"
+                    >Ver detalles</a>
                     ${broadcastButton}
                 </div>
             </div>`
@@ -110,8 +161,10 @@ const renderData = async (posts) => {
         postsWrapper.appendChild(singlePostWrapper)
     }
     rootElement.appendChild(postsWrapper)
+    addModalListeners()
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    createModal()
     fetchData()
 })
