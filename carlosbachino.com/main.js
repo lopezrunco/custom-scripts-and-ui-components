@@ -36,11 +36,11 @@ const createModal = () => {
     closeBtn.classList.add('close')
     closeBtn.innerHTML = '&times' // Close button.
 
-    const excerptDiv = d.createElement('div')
-    excerptDiv.id = 'modal-excerpt'
+    const fullContentDiv = d.createElement('div')
+    fullContentDiv.id = 'modal-full-content'
 
     modalContent.appendChild(closeBtn)
-    modalContent.appendChild(excerptDiv)
+    modalContent.appendChild(fullContentDiv)
     modal.appendChild(modalContent)
     d.body.appendChild(modal)
 
@@ -58,15 +58,47 @@ const createModal = () => {
 
 const addModalListeners = () => {
     const modal = d.getElementById('modal')
-    const modalContent = d.getElementById('modal-excerpt')
+    const fullContentDiv = d.getElementById('modal-full-content')
 
     d.querySelectorAll('.details-button').forEach(button => {
-        button.addEventListener('click', (event) => {
+        button.addEventListener('click', async (event) => {
             event.preventDefault()
-            // Extract excerpt from button data attribute
-            const excerpt = button.getAttribute('data-excerpt')
-            modalContent.innerHTML = `<p>${excerpt}</p>`
-            modal.style.display = 'flex'
+            try {
+                // Fetch full content of the post.
+                const postId = button.getAttribute('data-post-id')
+                const fullContentUrl = `${URL}/${postId}`
+
+                const response = await fetch(fullContentUrl)
+                if (response.ok) {
+                    const postData = await response.json()
+                    const title = postData.title.rendered
+                    const location = postData.ubicacion
+                    const modality = postData.modalidad
+                    const breeder = postData.cabana
+                    const fullContent = postData.content.rendered
+
+                    const date = new Date(postData.inicio_del_remate)
+                    const year = date.getFullYear()
+                    const month = months[date.getMonth() + 1]
+                    const day = date.getDate()
+
+                    fullContentDiv.innerHTML = `
+                        <div class="meta">
+                            <h2>${title}</h2>
+                            <p><b>Fecha:</b> ${day} ${month} ${year}</p>
+                            <p><b>Lugar: </b> ${location} | <b>Cabaña: </b> ${breeder} | <b>Modalidad: </b> ${modality}</p>
+                        </div>
+                        <div class="full-content">
+                            ${fullContent}
+                        </div>
+                    `
+                    modal.style.display = 'flex'
+                } else {
+                    throw new Error(`Error fetching the url ${fullContentUrl}`)
+                }
+            } catch (error) {
+                console.error('Error fetching full content: ', error)
+            }
         })
     })
 }
@@ -152,7 +184,7 @@ const renderData = async (posts) => {
                     <a 
                         href="#" 
                         class="button primary-button details-button" 
-                        data-excerpt="${excerpt}"
+                        data-post-id="${post.id}"
                     >Ver detalles</a>
                     ${broadcastButton}
                 </div>
