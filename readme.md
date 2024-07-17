@@ -21,8 +21,6 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 
 - [X] agroymascotas.com.uy: Append WhatsApp contact button in every product Script.
 
-- [X] carlosbachino.com: Custom module that shows specific posts at a certain date and time.
-
 - [X] ginkgopm.com.uy: Video gallery React.js app.
 
 - [X] expobienestar.ginkgopm.com.uy: Photo gallery React.js app.
