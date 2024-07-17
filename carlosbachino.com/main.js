@@ -147,7 +147,6 @@ const renderData = async (posts) => {
 
     for (const post of posts) {
         const title = post.title.rendered
-        const excerpt = post.excerpt.rendered
         const imageUrl = await getImageUrl(post)
         const broadcastLink = post.enlace_transmision
         const location = post.ubicacion
@@ -165,6 +164,10 @@ const renderData = async (posts) => {
         const broadcastButton = broadcastLink
             ? `<a href="${broadcastLink}" target="_blank" class="button primary-button">Transmisión</a>`
             : ''
+        
+        const detailsButton = post.content.rendered
+            ? `<a href="#" class="button primary-button details-button" data-post-id="${post.id}">Ver detalles</a>`
+            : ''
 
         singlePostWrapper.innerHTML =
             `<div class="item-wrapper">
@@ -178,14 +181,8 @@ const renderData = async (posts) => {
                 </div>
                 <div class="info-wrapper">
                     <h3>${title}</h3>
-                    <p>
-                        <b>Lugar: </b> ${location} | <b>Cabaña: </b> ${breeder} | <b>Modalidad: </b> ${modality}
-                    </p>
-                    <a 
-                        href="#" 
-                        class="button primary-button details-button" 
-                        data-post-id="${post.id}"
-                    >Ver detalles</a>
+                    <p><b>Lugar: </b> ${location} | <b>Cabaña: </b> ${breeder} | <b>Modalidad: </b> ${modality}</p>
+                    ${detailsButton}
                     ${broadcastButton}
                 </div>
             </div>`
