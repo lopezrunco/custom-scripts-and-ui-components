@@ -22,6 +22,10 @@
 /ginkgopm.com.uy-video-gallery/.firebaserc
 /ginkgopm.com.uy-video-gallery/firebase.json
 
+# joaquingonzaleznr.com.uy
+
+/joaquingonzaleznr.com.uy/data.js
+
 # /expobienestar.ginkgopm-photo-gallery
 /expobienestar.ginkgopm-photo-gallery/node_modules
 /expobienestar.ginkgopm-photo-gallery/public

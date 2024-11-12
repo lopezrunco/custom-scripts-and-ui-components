@@ -27,6 +27,8 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 
 - [X] gerontologia.ginkgopm.com.uy: Photo gallery with vanilla JS.
 
+- [X] joaquingonzaleznr.com.uy: Service module with vanilla JS.
+
 - [X] valuar.com.uy scripts: Video player, header contact info & brands banner.
 
 - [X] Weather module React.js app.
