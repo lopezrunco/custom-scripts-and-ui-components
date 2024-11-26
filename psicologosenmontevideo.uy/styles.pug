@@ -1,0 +1,68 @@
+style
+  | .separator {
+  |   padding-top: 5rem;
+  | }
+  | h2,
+  | h5 {
+  |   text-align: center;
+  | }
+  | h5 {
+  |   margin-bottom: 3rem;
+  | }
+  | i {
+  |   margin-right: .5rem;
+  | }
+  | img {
+  |   width: 100%;
+  | }
+  | ul {
+  |   list-style: none;
+  |   padding-left: 0;
+  | }
+  | li {
+  |   margin-bottom: 1rem;
+  | }
+  | li i {
+  |   color: #b8a9d8;
+  | }
+  | .grid-2,
+  | .grid-3 {
+  |   display: grid;
+  |   grid-template-columns: 1fr;
+  |   gap: 4rem;
+  |   overflow: hidden;
+  | }
+  | @media (min-width: 992px) {
+  |   .grid-2 {
+  |     grid-template-columns: repeat(2, 1fr);
+  |   }
+  | }
+  | @media (min-width: 992px) {
+  |   .grid-3 {
+  |     grid-template-columns: repeat(3, 1fr);
+  |   }
+  | }
+  | .feature {
+  |   text-align: center;
+  |   margin: 3rem 0 0;  
+  | }
+  | .feature i {
+  |   font-size: 2rem;
+  |   color: #425a9e;
+  | }
+  | .feature h5 {
+  |   margin-bottom: 0;
+  | }
+  | @keyframes fadeInUp {
+  |   0% {
+  |     opacity: 0;
+  |     transform: translateY(20px);
+  |   }
+  |   100% {
+  |     opacity: 1;
+  |     transform: translateY(0);
+  |   }
+  | }
+  | .fade-in-up {
+  |   animation: fadeInUp 1s ease-out;
+  | }

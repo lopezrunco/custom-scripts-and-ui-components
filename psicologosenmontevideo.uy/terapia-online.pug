@@ -1,0 +1,30 @@
+include ./data/online-therapy.pug
+include styles.pug
+
+main
+    section.fade-in-up
+        article
+            h2=onlineTherapyData.title
+            h5=onlineTherapyData.subtitle
+        article.grid-2
+            img(src=onlineTherapyData.imgSrc, alt="Psicólogos en Montevideo")
+            div
+                ul
+                    each service in onlineTherapyData.services
+                        li
+                            i(class="fa fa-check") 
+                            | #{service}
+                a(href=onlineTherapyData.callToActionHref, target="_blank", class="fusion-button button-flat fusion-button-default-size button-default fusion-button-default button-2 fusion-button-default-span fusion-button-default-type")
+                    i(class="fab fa-whatsapp") 
+                    | #{onlineTherapyData.callToActionText}
+    div.separator
+    section.fade-in-up
+        article
+            div.grid-3
+                each feature in onlineTherapyData.featured
+                    div.feature
+                        i(class=feature.icon)
+                        h5=feature.title
+                        p=feature.description
+
+

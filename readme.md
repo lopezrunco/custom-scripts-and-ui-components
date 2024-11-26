@@ -17,19 +17,29 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 
 ## Content
 
-- [X] agroveterinariaelestribo.com.uy: Append WhatsApp contact button in every product Script.
+- [X] [agroveterinariaelestribo.com.uy](https://agroveterinariaelestribo.com.uy)  
+  Append WhatsApp contact button in every product Script.
 
-- [X] agroymascotas.com.uy: Append WhatsApp contact button in every product Script.
+- [X] [agroymascotas.com.uy](https://agroymascotas.com.uy)  
+  Append WhatsApp contact button in every product Script.
 
-- [X] ginkgopm.com.uy: Video gallery React.js app.
+- [X] [ginkgopm.com.uy](https://ginkgopm.com.uy)  
+  Video gallery React.js app.
 
-- [X] expobienestar.ginkgopm.com.uy: Photo gallery React.js app.
+- [X] [expobienestar.ginkgopm.com.uy](https://expobienestar.ginkgopm.com.uy)  
+  Photo gallery React.js app.
 
-- [X] gerontologia.ginkgopm.com.uy: Photo gallery with vanilla JS.
+- [X] [gerontologia.ginkgopm.com.uy](https://gerontologia.ginkgopm.com.uy)  
+  Photo gallery with vanilla JS.
 
-- [X] joaquingonzaleznr.com.uy: Service module with vanilla JS.
+- [X] [joaquingonzaleznr.com.uy](https://joaquingonzaleznr.com.uy)  
+  Service module with vanilla JS.
 
-- [X] valuar.com.uy scripts: Video player, header contact info & brands banner.
+- [X] [psicologosenmontevideo.uy](https://https://psicologosenmontevideo.uy/)  
+  Custom pages optimized for SEO with PUG.
+
+- [X] [valuar.com.uy](https://valuar.com.uy)  
+  Scripts to generate a video player, header contact info & brands banner.
 
 - [X] Weather module React.js app.
 

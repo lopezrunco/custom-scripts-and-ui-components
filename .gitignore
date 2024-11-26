@@ -38,6 +38,11 @@
 /gerontologia.ginkgopm-photo-gallery/assets
 /gerontologia.ginkgopm-photo-gallery/assets-url.js
 
+# psicologosenmontevideo.uy
+/psicologosenmontevideo.uy/node_modules
+/psicologosenmontevideo.uy/data
+/psicologosenmontevideo.uy/terapia-online.html
+
 # weather-module
 /weather-module/node_modules
 /weather-module/.firebase
