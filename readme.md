@@ -35,7 +35,7 @@ Whether you're building a sophisticated e-commerce platform, a sleek corporate w
 - [X] [joaquingonzaleznr.com.uy](https://joaquingonzaleznr.com.uy)  
   Service module with vanilla JS.
 
-- [X] [psicologosenmontevideo.uy](https://https://psicologosenmontevideo.uy/)  
+- [X] [psicologosenmontevideo.uy](https://psicologosenmontevideo.uy/)  
   Custom pages optimized for SEO with PUG.
 
 - [X] [valuar.com.uy](https://valuar.com.uy)  
