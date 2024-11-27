@@ -1,0 +1,31 @@
+include ./data/alberto-zibil.pug
+include styles.pug
+
+main
+    section.fade-in-up
+        article
+            h2=albertoData.name
+            h3=albertoData.title
+            h5=albertoData.subtitle
+        article.grid-2
+            div 
+                img(src=albertoData.imgSrc, alt=albertoData.name)
+                a(href=albertoData.callToActionHref, target="_blank", class="fusion-button button-flat fusion-button-default-size button-default fusion-button-default button-2 fusion-button-default-span fusion-button-default-type")
+                    i(class="fab fa-whatsapp") 
+                    | #{albertoData.callToActionText}
+            div
+                h5="Formación académica"
+                ul
+                    each academic in albertoData.academics
+                        li
+                            i(class="fa fa-check") 
+                            | #{academic}
+                h5="Actividad Laboral"
+                ul
+                    each work in albertoData.career
+                        li
+                            i(class="fa fa-check") 
+                            | #{work}
+
+
+
