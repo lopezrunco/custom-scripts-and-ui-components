@@ -1,0 +1,110 @@
+/* Change root colors */
+:root {
+  --primary_color: #4a23bc !important;
+  --menu_text_active_color: #4a23bc !important;
+  --menu_text_hover_color: #4a23bc !important;
+  --menu_dropdown_text_active_color: #4a23bc !important;
+}
+
+body .btn-primary,
+body .sppb-btn-primary {
+  background: #331882 !important;
+  color: #ffffff !important;
+  border: 1px solid #331882 !important;
+}
+
+.bg-primary {
+  background: #331882 !important;
+}
+
+#sp-bottom {
+  border-top: 5px solid #2f2f2f !important;
+}
+
+/* Build Home product grid */
+.vmproduct.productdetails {
+  display: grid !important;
+  gap: 1rem !important;
+  grid-template-columns: 1fr !important;
+}
+
+.vmproduct .product-container {
+  padding: 15px !important;
+}
+
+.vmproduct.productdetails .product-container .featuredProductImage {
+  width: 100% !important;
+  height: 350px !important;
+  object-fit: contain !important;
+  border-bottom: 1px solid #adb5bd4d !important;
+}
+
+.vmproduct.productdetails .product-container a {
+  font-size: 17px !important;
+  line-height: normal !important;
+}
+
+.vmproduct.productdetails .product-container .spacer {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 5px !important;
+}
+
+.vmproduct.productdetails .product-container .spacer .productdetails {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.vmproduct.productdetails
+  .product-container
+  .spacer
+  .productdetails
+  .product-price
+  .vm-price-value {
+  font-size: 18px !important;
+  color: #a9a9a9d4 !important;
+}
+
+@media (min-width: 768px) {
+  .vmproduct.productdetails {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Single product page */
+#fancybox-content {
+  height: auto !important;
+}
+
+.product-neighbours {
+  margin-bottom: 2rem !important;
+}
+
+/* Shop page */
+img.browseProductImage {
+  object-fit: contain !important;
+  height: 350px !important;
+}
+.vm-product-grid .product {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .vm-product-grid .row .product  {
+    width: 100% !important;
+  }
+}
+
+/* Breadcrumbs */
+.sp-page-title.title-image-bg:before {
+  background: #6f6099ad !important;
+}
+
+/* Contact form */
+.com-contact.contact .row > div {
+  width: 100% !important;
+}
