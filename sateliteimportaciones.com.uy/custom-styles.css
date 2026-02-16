@@ -108,3 +108,15 @@ img.browseProductImage {
 .com-contact.contact .row > div {
   width: 100% !important;
 }
+
+/* Whatsapp button */
+.wapp-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+}
+.wapp-btn img {
+  width: 3rem;
+  height: 3rem;
+}
