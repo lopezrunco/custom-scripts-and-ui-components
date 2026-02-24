@@ -106,17 +106,17 @@ img.browseProductImage {
 
 .vm-product-grid .product .product-container {
   border: 1px solid #adb5bd4d;
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {
-  .vm-product-grid .row .product  {
+  .vm-product-grid .row .product {
     width: 100% !important;
   }
 }
 
 .vm-price-value span.vm-price-desc {
-    display: none;
+  display: none;
 }
 
 .product-price .vm-price-value {
@@ -149,4 +149,9 @@ img.browseProductImage {
 .wapp-btn img {
   width: 3rem;
   height: 3rem;
+}
+
+/* Bootstrap overrides */
+ul {
+  padding-left: 0;
 }
